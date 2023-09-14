@@ -1,9 +1,8 @@
-// import { useState } from 'react';
-import './pages/home.tsx';
+import Home from './pages/Home';
 
 function App() {
   return (
-    'Olá mundo!!!'
+    <Home />
   );
 }
 
