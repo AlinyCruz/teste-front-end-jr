@@ -1,23 +1,96 @@
 import Carousel from './Carousel';
 import BtnProduto from './BtnProduto';
+import BtnComponent from './BtnComponent';
+import BtnConfira from './BtnConfira';
+import Section from './Section';
+import CreateCarousel from './CreateCarousel';
+import CarouselEnd from './CarouselEnd';
+
+const arrayImages = [
+  { srcCard: 'src/images/monitorar-tablet-e-smartohone 1.png', descricao: 'Tecnologia' },
+  { srcCard: 'src/images/supermercados 1.png', descricao: 'Supermercado' },
+  { srcCard: 'src/images/whiskey.png', descricao: 'Bebidas' },
+  { srcCard: 'src/images/ferramentas 1.png', descricao: 'Ferramentas' },
+  { srcCard: 'src/images/cuidados-de-saude 1.png', descricao: 'Saúde' },
+  { srcCard: 'src/images/corrida 1.png', descricao: 'Esporte e fitness' },
+  { srcCard: 'src/images/moda 1.png', descricao: 'Moda' },
+];
+
+const card1 = {
+  srcCard: 'src/images/Rectangle 250.png',
+  alt: 'Rectangle',
+  descricao1: 'Venha conhecer nossas promoções',
+  descricao2: '50% Off nos produtos',
+};
+
+const card2 = [
+  {
+    srcCard: 'src/images/image 45.png',
+    srcCard2: 'src/images/image 101.png',
+    alt: 'Rectangle',
+    descricao1: 'Parceiros',
+    descricao2: 'Lorem ipsum dolor sit amet, consectetur',
+    descricao3: 'Produtos',
+  },
+  {
+    srcCard: 'src/images/image 45.png',
+    srcCard2: 'src/images/image 101.png',
+    alt: 'Rectangle',
+    descricao1: 'Parceiros',
+    descricao2: 'Lorem ipsum dolor sit amet, consectetur',
+    descricao3: 'Produtos',
+  },
+];
 
 function Main() {
   return (
     <>
       <main>
-        <img src="src/images/Rectangle 250.png" alt="Rectangle" />
-        <h1>Venha conhecer nossas promoções</h1>
-        <h2>50% Off nos produtos</h2>
+        {Section(card1.srcCard, card1.alt, card1.descricao1, card1.descricao2)}
         <BtnProduto />
       </main>
       <section>
-        <div>
-          <img src="src/images/monitorar-tablet-e-smartohone 1.png" alt="monitor" />
-        </div>
-        <h5>Tecnologia</h5>
+        {
+          arrayImages.map((item) => {
+            return (
+              <div key={item.descricao} className="btn-compras">
+                {BtnComponent(item.srcCard)}
+                <p>{item.descricao}</p>
+              </div>
+            );
+          })
+        }
       </section>
       <Carousel />
-
+      <section>
+        {
+          card2.map((item) => {
+            return (
+              <section key={item.descricao1} className="srcCard">
+                {Section(item.srcCard, item.alt, item.descricao1, item.descricao2)}
+                <BtnConfira />
+              </section>
+            );
+          })
+        }
+      </section>
+      <section>
+        <h3>Produtos relacionados</h3>
+        <a href="">Ver todos</a>
+        {
+          card2.map((item) => {
+            return (
+              <section key={item.descricao1} className="srcCard">
+                {Section(item.srcCard2, item.alt, item.descricao3, item.descricao2)}
+                <BtnConfira />
+              </section>
+            );
+          })
+        }
+      </section>
+      <section>
+        <CarouselEnd />
+      </section>
     </>
   );
 }

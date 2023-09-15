@@ -1,6 +1,6 @@
 function BtnComprar() {
   return (
-    <button type="button">Comprar</button>
+    <button type="button">COMPRAR</button>
   );
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function InputModal() {
   const [valor, setValor] = useState(0);

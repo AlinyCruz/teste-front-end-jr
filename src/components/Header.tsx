@@ -5,7 +5,6 @@ import BtnComponent from './BtnComponent';
 
 function Header() {
   const arrayImages = [
-    { srcImage: 'src/images/MagnifyingGlass.png' },
     { srcImage: 'src/images/Group.png' },
     { srcImage: 'src/images/Heart.png' },
     { srcImage: 'src/images/UserCircle.png' },
@@ -34,7 +33,15 @@ function Header() {
       </div>
       <div id="painel-superior-2">
         <img src="src/images/Group 35.png" alt="logo-vtex" />
-        <input placeholder="O que você está buscando?" />
+        <div>
+          <input placeholder="O que você está buscando?" />
+          <button>
+            <img
+              src="src/images/MagnifyingGlass.png"
+              alt="MagnifyingGlass"
+            />
+          </button>
+        </div>
         {
           arrayImages.map((image) => BtnComponent(image.srcImage))
         }
