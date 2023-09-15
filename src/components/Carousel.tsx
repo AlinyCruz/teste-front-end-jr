@@ -7,8 +7,8 @@ console.log(API);
 
 function Carousel() {
   return (
-    <>
-      <div>
+    <div>
+      <section>
         <h3>Produtos relacionados</h3>
         <h5>CELULAR</h5>
         <h5>ACESSÓRIOS</h5>
@@ -16,11 +16,11 @@ function Carousel() {
         <h5>NOTEBOOKS</h5>
         <h5>TVS</h5>
         <h5>VER TODOS</h5>
-      </div>
-      <section>
-        <CreateCarousel data={API} />
       </section>
-    </>
+      <section>
+        <CreateCarousel data={ API } />
+      </section>
+    </div>
   );
 }
 

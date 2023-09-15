@@ -15,9 +15,9 @@ function InputModal() {
 
   return (
     <div>
-      <button onClick={decrementar}>-</button>
-      <input type="text" value={valor} readOnly />
-      <button onClick={incrementar}>+</button>
+      <button onClick={ decrementar }>-</button>
+      <input type="text" value={ valor } readOnly />
+      <button onClick={ incrementar }>+</button>
     </div>
   );
 }

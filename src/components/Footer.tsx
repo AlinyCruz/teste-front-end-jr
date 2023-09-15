@@ -22,7 +22,7 @@ function Footer() {
             {
               cardFlags.map((item) => {
                 return (
-                  <img key={item.alt} src={item.flag} alt={item.alt} />
+                  <img key={ item.alt } src={ item.flag } alt={ item.alt } />
                 );
               })
             }
@@ -41,7 +41,7 @@ function Footer() {
 
         <div id="pagamentos">
           <h3>FORMAS DE PAGAMENTO</h3>
-          <img src={cards.card1} alt={cards.alt1} />
+          <img src={ cards.card1 } alt={ cards.alt1 } />
         </div>
 
         <div id="cadastre-se">

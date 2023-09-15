@@ -52,7 +52,6 @@ function CreateCarousel({ data }) {
           src="src/images/Vector.png"
           alt="Vector"
         />
-
       </button>
       <div className="slides-container">
         {renderItems()}
