@@ -1,4 +1,4 @@
-import CreateCarousel from '../services/createCarousel';
+import CreateCarousel from './createCarousel';
 import fetchAPI from '../services/fetchAPI';
 
 const JSON = 'https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json';

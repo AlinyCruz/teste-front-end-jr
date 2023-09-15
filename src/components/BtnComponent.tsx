@@ -1,8 +1,8 @@
 function BtnComponent(image: string) {
   return (
-    <button>
+    <button key={image}>
       {' '}
-      <img src={ image } alt={ image } />
+      <img src={image} alt={image} />
       {' '}
     </button>
   );
