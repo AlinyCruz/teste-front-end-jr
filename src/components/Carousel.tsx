@@ -8,8 +8,8 @@ console.log(API);
 function Carousel() {
   return (
     <>
-      <h3>Produtos relacionados</h3>
       <div>
+        <h3>Produtos relacionados</h3>
         <h5>CELULAR</h5>
         <h5>ACESSÓRIOS</h5>
         <h5>TABLETS</h5>

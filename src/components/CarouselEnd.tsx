@@ -3,13 +3,13 @@ import Modal from './Modal';
 import ModalEnd from './ModalEnd';
 
 const data = [
-  { photo: 'src/images/Group 35.png', productName: 'VTEX' },
-  { photo: 'src/images/Group 35.png', productName: 'VTEX' },
-  { photo: 'src/images/Group 35.png', productName: 'VTEX' },
-  { photo: 'src/images/Group 35.png', productName: 'VTEX' },
-  { photo: 'src/images/Group 35.png', productName: 'VTEX' },
-  { photo: 'src/images/Group 35.png', productName: 'VTEX' },
-  { photo: 'src/images/Group 35.png', productName: 'VTEX' },
+  { photo: 'src/images/Group 35.png', productName: 'VTEX1' },
+  { photo: 'src/images/Group 35.png', productName: 'VTEX2' },
+  { photo: 'src/images/Group 35.png', productName: 'VTEX3' },
+  { photo: 'src/images/Group 35.png', productName: 'VTEX4' },
+  { photo: 'src/images/Group 35.png', productName: 'VTEX5' },
+  { photo: 'src/images/Group 35.png', productName: 'VTEX6' },
+  { photo: 'src/images/Group 35.png', productName: 'VTEX7' },
 ];
 
 function CarouselEnd() {
@@ -56,7 +56,7 @@ function CarouselEnd() {
 
   return (
     <section>
-      <h3>Produtos relacionados</h3>
+      <h3>Navegue por marcas</h3>
       <div className="carrossel">
         <button onClick={prevSlide}>
           <img

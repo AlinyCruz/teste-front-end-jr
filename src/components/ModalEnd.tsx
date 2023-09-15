@@ -1,6 +1,3 @@
-import BtnComprar from './BtnComprar';
-import InputModal from './InputModal';
-
 function ModalEnd({ produto, onClose }) {
   return (
     <div className="modal">

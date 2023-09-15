@@ -3,7 +3,6 @@ import BtnProduto from './BtnProduto';
 import BtnComponent from './BtnComponent';
 import BtnConfira from './BtnConfira';
 import Section from './Section';
-import CreateCarousel from './CreateCarousel';
 import CarouselEnd from './CarouselEnd';
 
 const arrayImages = [
@@ -26,16 +25,18 @@ const card1 = {
 const card2 = [
   {
     srcCard: 'src/images/image 45.png',
+    altSrcCard1: 'image-45-1',
     srcCard2: 'src/images/image 101.png',
-    alt: 'Rectangle',
+    altSrcCard2: 'image-101-1',
     descricao1: 'Parceiros',
     descricao2: 'Lorem ipsum dolor sit amet, consectetur',
     descricao3: 'Produtos',
   },
   {
     srcCard: 'src/images/image 45.png',
+    altSrcCard1: 'image-45-2',
     srcCard2: 'src/images/image 101.png',
-    alt: 'Rectangle',
+    altSrcCard2: 'image-101-2',
     descricao1: 'Parceiros',
     descricao2: 'Lorem ipsum dolor sit amet, consectetur',
     descricao3: 'Produtos',
@@ -66,8 +67,13 @@ function Main() {
         {
           card2.map((item) => {
             return (
-              <section key={item.descricao1} className="srcCard">
-                {Section(item.srcCard, item.alt, item.descricao1, item.descricao2)}
+              <section key={item.altSrcCard1} className="srcCard">
+                {Section(
+                  item.srcCard,
+                  item.altSrcCard1,
+                  item.descricao1,
+                  item.descricao2,
+                )}
                 <BtnConfira />
               </section>
             );
@@ -75,13 +81,20 @@ function Main() {
         }
       </section>
       <section>
-        <h3>Produtos relacionados</h3>
-        <a href="">Ver todos</a>
+        <div>
+          <h3>Produtos relacionados</h3>
+          <a href="">Ver todos</a>
+        </div>
         {
           card2.map((item) => {
             return (
-              <section key={item.descricao1} className="srcCard">
-                {Section(item.srcCard2, item.alt, item.descricao3, item.descricao2)}
+              <section key={item.altSrcCard2} className="srcCard">
+                {Section(
+                  item.srcCard2,
+                  item.altSrcCard2,
+                  item.descricao3,
+                  item.descricao2,
+                )}
                 <BtnConfira />
               </section>
             );
