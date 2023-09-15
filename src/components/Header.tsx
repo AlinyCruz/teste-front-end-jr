@@ -1,6 +1,3 @@
-/* eslint-disable react/jsx-curly-spacing */
-// import Header from '../components/Header';
-
 import BtnComponent from './BtnComponent';
 
 function Header() {
@@ -23,14 +20,15 @@ function Header() {
         {
           btnCompras.map((item) => {
             return (
-              <div key={item.descricao} className="btn-compras">
-                <img src={item.srcCompras} alt={item.srcCompras} />
+              <div key={ item.descricao } className="btn-compras">
+                <img src={ item.srcCompras } alt={ item.srcCompras } />
                 <p>{item.descricao}</p>
               </div>
             );
           })
         }
       </div>
+
       <div id="painel-superior-2">
         <img src="src/images/Group 35.png" alt="logo-vtex" />
         <div>
@@ -46,6 +44,7 @@ function Header() {
           arrayImages.map((image) => BtnComponent(image.srcImage))
         }
       </div>
+
       <div id="painel-superior-3">
         <h5>TODAS CATEGORIAS</h5>
         <h5>SUPERMERCADO</h5>

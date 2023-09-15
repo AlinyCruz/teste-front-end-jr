@@ -12,7 +12,7 @@ function Footer() {
 
   return (
     <footer>
-      <div id="footer1">
+      <section id="footer1">
         <div id="sobre">
           <h3>Sobre nós</h3>
           <h4>CONHEÇA</h4>
@@ -22,7 +22,7 @@ function Footer() {
             {
               cardFlags.map((item) => {
                 return (
-                  <img key={item.alt} src={item.flag} alt={item.alt} />
+                  <img key={ item.alt } src={ item.flag } alt={ item.alt } />
                 );
               })
             }
@@ -41,7 +41,7 @@ function Footer() {
 
         <div id="pagamentos">
           <h3>FORMAS DE PAGAMENTO</h3>
-          <img src={cards.card1} alt={cards.alt1} />
+          <img src={ cards.card1 } alt={ cards.alt1 } />
         </div>
 
         <div id="cadastre-se">
@@ -58,9 +58,9 @@ function Footer() {
             <button>OK</button>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="footer2">
+      <section id="footer2">
         <h5>
           Copyright © 2019. Todos os direitos reservados.
           Todas as marcas e suas imagens são de propriedade de seus respectivos donos.
@@ -68,7 +68,7 @@ function Footer() {
           expressa autorização.
         </h5>
         <img src="src/images/Group 831.png" alt="Group" />
-      </div>
+      </section>
     </footer>
   );
 }

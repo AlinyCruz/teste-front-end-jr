@@ -45,7 +45,7 @@ const card2 = [
 
 function Main() {
   return (
-    <>
+    <div>
       <main>
         {Section(card1.srcCard, card1.alt, card1.descricao1, card1.descricao2)}
         <BtnProduto />
@@ -54,7 +54,7 @@ function Main() {
         {
           arrayImages.map((item) => {
             return (
-              <div key={item.descricao} className="btn-compras">
+              <div key={ item.descricao } className="btn-compras">
                 {BtnComponent(item.srcCard)}
                 <p>{item.descricao}</p>
               </div>
@@ -62,12 +62,14 @@ function Main() {
           })
         }
       </section>
+
       <Carousel />
+
       <section>
         {
           card2.map((item) => {
             return (
-              <section key={item.altSrcCard1} className="srcCard">
+              <section key={ item.altSrcCard1 } className="srcCard">
                 {Section(
                   item.srcCard,
                   item.altSrcCard1,
@@ -80,6 +82,7 @@ function Main() {
           })
         }
       </section>
+
       <section>
         <div>
           <h3>Produtos relacionados</h3>
@@ -88,7 +91,7 @@ function Main() {
         {
           card2.map((item) => {
             return (
-              <section key={item.altSrcCard2} className="srcCard">
+              <section key={ item.altSrcCard2 } className="srcCard">
                 {Section(
                   item.srcCard2,
                   item.altSrcCard2,
@@ -101,10 +104,11 @@ function Main() {
           })
         }
       </section>
+
       <section>
         <CarouselEnd />
       </section>
-    </>
+    </div>
   );
 }
 
