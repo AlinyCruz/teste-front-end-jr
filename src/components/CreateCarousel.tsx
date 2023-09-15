@@ -34,11 +34,11 @@ function CreateCarousel({ data }) {
 
     return itemsToRender.map((item) => (
       <div
-        key={item.productName}
+        key={ item.productName }
         className="slide"
-        onClick={() => openModal(item)}
+        onClick={ () => openModal(item) }
       >
-        <img src={item.photo} alt={item.productName} />
+        <img src={ item.photo } alt={ item.productName } />
         <p>{item.productName}</p>
         <p>{item.price}</p>
       </div>
@@ -47,7 +47,7 @@ function CreateCarousel({ data }) {
 
   return (
     <div className="carrossel">
-      <button onClick={prevSlide}>
+      <button onClick={ prevSlide }>
         <img
           src="src/images/Vector.png"
           alt="Vector"
@@ -57,7 +57,7 @@ function CreateCarousel({ data }) {
       <div className="slides-container">
         {renderItems()}
       </div>
-      <button onClick={nextSlide}>
+      <button onClick={ nextSlide }>
         <img
           src="src/images/Vector (1).png"
           alt="Vector"
@@ -65,8 +65,8 @@ function CreateCarousel({ data }) {
       </button>
       {modalOpen && (
         <Modal
-          produto={selectedProduto}
-          onClose={closeModal}
+          produto={ selectedProduto }
+          onClose={ closeModal }
         />
       )}
     </div>
