@@ -1,0 +1,110 @@
+@import '_colors.scss';
+
+@mixin div-header1() {
+  width: 1280px;
+  height: 32px;
+  flex-shrink: 0;
+  background: $white;
+  display: flex;
+  justify-content:space-around;
+  margin: auto;
+}
+
+@mixin header-escrita1() {
+  color: $gray;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+}
+
+@mixin header-escrita2() {
+  color: $pink;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+}
+
+@mixin div-header2() {
+  width: 1280px;
+  height: 72px;
+  flex-shrink: 0;
+  background: $white;
+  display: flex;
+  justify-content:space-around;
+  padding-top: 15px;
+  margin: auto;
+}
+
+@mixin img-header() {
+  width: 139px;
+  height: 50.641px;
+  flex-shrink: 0;
+}
+
+@mixin input-header() {
+  width: 657px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: $bg-input;
+}
+
+@mixin input-header-escrita() {
+
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@mixin input-search() {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  border: none;
+  position: absolute;
+  margin-left: -3%;
+  margin-top: 12px;
+}
+
+@mixin item-header() {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 40%;
+  margin-top: 10px;
+  margin: 10px 10px;
+}
+
+@mixin div-header3() {
+  width: 1280px;
+  height: 40px;
+  flex-shrink: 0;
+  background: $white;
+  box-shadow: 0px 8px 16px 0px $rgba;
+  display: flex;
+  justify-content:space-around;
+  align-items: baseline;
+  margin: auto;
+}
+
+@mixin header-escrita3($color) {
+  color: $color;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}

@@ -1,0 +1,44 @@
+@import 'colors.scss';
+@import '_components-header.scss';
+
+#painel-superior-1 {
+  @include div-header1();
+}
+
+.icons-sup {
+  @include header-escrita1();
+}
+
+.img-sup {
+  margin-right: 10px;
+}
+
+#painel-superior-2 {
+  @include div-header2();
+}
+
+#logo-vtex {
+  @include img-header()
+}
+
+#input-topo {
+  @include input-header();
+  @include input-header-escrita();
+}
+
+#button-topo {
+  @include input-search();
+}
+
+#four-buttons button{
+  @include item-header();
+}
+
+#painel-superior-3 {
+  @include div-header3();
+  @include header-escrita3($gray)
+}
+
+#oferta-do-dia {
+  @include header-escrita3($pink)
+}

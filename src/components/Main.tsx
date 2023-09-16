@@ -45,11 +45,12 @@ const card2 = [
 
 function Main() {
   return (
-    <div>
-      <main>
+    <main>
+      <section>
         {Section(card1.srcCard, card1.alt, card1.descricao1, card1.descricao2)}
         <BtnProduto />
-      </main>
+      </section>
+
       <section>
         {
           arrayImages.map((item) => {
@@ -108,7 +109,7 @@ function Main() {
       <section>
         <CarouselEnd />
       </section>
-    </div>
+    </main>
   );
 }
 
