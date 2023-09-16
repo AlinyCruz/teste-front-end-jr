@@ -1,0 +1,103 @@
+@import 'colors.scss';
+@import '_components-header.scss';
+
+#img-50 img {
+  @include image();
+}
+
+#img-50 h1 {
+  @include title();
+}
+
+#img-50 h2 {
+  @include subtitle();
+}
+
+#btnProduto {
+  @include button1();
+  @include title-button1();
+}
+
+#compras {
+  @include div1-main();
+}
+
+.btn-compras {
+  @include rectangle-main();
+}
+
+#btn-tag-compras {
+  border: none;
+}
+
+#div-carousel h3 {
+  @include products-rel();
+  display: flex;
+  justify-content: center;
+}
+
+#produtos-relacionados {
+  @include products-rel();
+  @include box-products();
+  @include text2();
+  display: flex;
+  justify-content: space-around;
+}
+
+#cel {
+  @include text1();
+}
+
+#carrossel {
+  @include carousel();
+  // display: flex
+}
+
+#carrossel button {
+  border: none;
+}
+
+
+#btn-comprar {
+  @include border();
+  @include button2();
+  @include title-button2();
+  
+}
+
+#slides-container {
+  display: contents;
+  @include images-carousel();
+  @include price();
+  @include text1();
+  // @include border();
+}
+
+#confira {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+#produtos-rel {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+#text-produtos-rel{
+  @include text-ver-todos();
+}
+
+#carrossel-end {
+  @include carousel();
+}
+
+section h3 {
+  display: flex;
+  justify-content: center;
+  
+}
+

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Modal from './Modal';
+import BtnComprar from './BtnComprar';
 
 function CreateCarousel({ data }) {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -41,27 +42,32 @@ function CreateCarousel({ data }) {
         <img src={ item.photo } alt={ item.productName } />
         <p>{item.productName}</p>
         <p>{item.price}</p>
+        <BtnComprar />
       </div>
     ));
   };
 
   return (
-    <div className="carrossel">
-      <button onClick={ prevSlide }>
-        <img
-          src="src/images/Vector.png"
-          alt="Vector"
-        />
-      </button>
-      <div className="slides-container">
-        {renderItems()}
+    <div>
+      <div id="carrossel">
+        <button onClick={ prevSlide }>
+          <img
+            src="src/images/Vector.png"
+            alt="Vector"
+          />
+        </button>
+
+        <div id="slides-container">
+          {renderItems()}
+        </div>
+
+        <button onClick={ nextSlide }>
+          <img
+            src="src/images/Vector (1).png"
+            alt="Vector"
+          />
+        </button>
       </div>
-      <button onClick={ nextSlide }>
-        <img
-          src="src/images/Vector (1).png"
-          alt="Vector"
-        />
-      </button>
       {modalOpen && (
         <Modal
           produto={ selectedProduto }

@@ -1,0 +1,33 @@
+@import 'colors.scss';
+@import 'components-footer';
+
+#sobre-info-pag {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 1442px;
+  height: 325px;
+}
+
+#footer1 {
+  @include div-footer(325px);
+  @include text-1();
+}
+
+#footer2 {
+  @include div-footer(70px);
+  @include text-2();
+}
+
+#icons-rede {
+  display: flex;
+  justify-content: space-around;
+}
+
+#img-footer {
+  @include img-footer();
+}
+
+#footer2 h5 {
+  margin: auto;
+}

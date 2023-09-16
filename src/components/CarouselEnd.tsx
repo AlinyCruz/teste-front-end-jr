@@ -56,28 +56,30 @@ function CarouselEnd() {
   return (
     <section>
       <h3>Navegue por marcas</h3>
-      <div className="carrossel">
-        <button onClick={ prevSlide }>
-          <img
-            src="src/images/Vector.png"
-            alt="Vector"
-          />
-        </button>
-        <div className="slides-container">
-          {renderItems()}
-        </div>
-        <button onClick={ nextSlide }>
-          <img
-            src="src/images/Vector (1).png"
-            alt="Vector"
-          />
-        </button>
-        {modalOpen && (
-          <ModalEnd
-            produto={ selectedProduto }
-            onClose={ closeModal }
-          />
-        )}
+      <div id="carrossel-end">
+        <section className="carrossel">
+          <button onClick={ prevSlide }>
+            <img
+              src="src/images/Vector.png"
+              alt="Vector"
+            />
+          </button>
+          <div className="slides-container">
+            {renderItems()}
+          </div>
+          <button onClick={ nextSlide }>
+            <img
+              src="src/images/Vector (1).png"
+              alt="Vector"
+            />
+          </button>
+          {modalOpen && (
+            <ModalEnd
+              produto={ selectedProduto }
+              onClose={ closeModal }
+            />
+          )}
+        </section>
       </div>
     </section>
   );

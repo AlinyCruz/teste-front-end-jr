@@ -1,0 +1,125 @@
+@import '_colors.scss';
+
+@mixin div-footer($height) {
+  display: flex;
+  margin: auto;
+  width: auto;
+  height: $height;
+  flex-shrink: 0;
+  background: $bg-footer-dark;
+  border: 1px solid $white;
+}
+
+@mixin text-1() {
+  color: $white;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@mixin text-2() {
+  color: $white;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+@mixin img-pagamento() {
+  width: 195px;
+  height: 148.545px;
+  flex-shrink: 0;
+}
+
+@mixin icons() {
+  width: 21.479px;
+  height: 21.46px;
+  flex-shrink: 0;
+}
+
+@mixin border() {
+  width: 380px;
+  height: 260px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: $white;
+}
+
+@mixin cadastre-se() {
+  color: $black;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+@mixin novidade() {
+  color: $black;
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+@mixin text-3() {
+  width: 310px;
+  color: $black;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+}
+
+@mixin input() {
+  width: 230px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid $bg-footer-dark;
+  background: $white;
+}
+
+@mixin button() {
+  width: 62px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: $pink;
+}
+
+@mixin title-button() {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+@mixin text-footer2() {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  text-transform: uppercase;
+}
+
+@mixin img-footer() {
+  width: 226.084px;
+  height: 32px;
+  flex-shrink: 0;
+  margin: auto;
+}

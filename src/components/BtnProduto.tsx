@@ -1,6 +1,6 @@
 function BtnProduto() {
   return (
-    <button type="button">Ver produto</button>
+    <button type="button" id="btnProduto">Ver produto</button>
   );
 }
 

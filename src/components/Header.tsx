@@ -20,8 +20,12 @@ function Header() {
         {
           btnCompras.map((item) => {
             return (
-              <div key={ item.descricao } className="btn-compras">
-                <img src={ item.srcCompras } alt={ item.srcCompras } />
+              <div key={ item.descricao } className="icons-sup">
+                <img
+                  src={ item.srcCompras }
+                  alt={ item.srcCompras }
+                  className="img-sup"
+                />
                 <p>{item.descricao}</p>
               </div>
             );
@@ -30,19 +34,26 @@ function Header() {
       </div>
 
       <div id="painel-superior-2">
-        <img src="src/images/Group 35.png" alt="logo-vtex" />
-        <div>
-          <input placeholder="O que você está buscando?" />
-          <button>
+        <img
+          src="src/images/Group 35.png"
+          alt="logo-vtex"
+          id="logo-vtex"
+        />
+        <div id="input-button">
+          <input placeholder="O que você está buscando?" id="input-topo" />
+          <button id="button-topo">
             <img
               src="src/images/MagnifyingGlass.png"
               alt="MagnifyingGlass"
+              id="magnifyingGlass"
             />
           </button>
         </div>
-        {
+        <div id="four-buttons">
+          {
           arrayImages.map((image) => BtnComponent(image.srcImage))
         }
+        </div>
       </div>
 
       <div id="painel-superior-3">
@@ -51,7 +62,7 @@ function Header() {
         <h5>LIVROS</h5>
         <h5>MODA</h5>
         <h5>LANÇAMENTOS</h5>
-        <h5>OFERTAS DO DIA</h5>
+        <h5 id="oferta-do-dia">OFERTAS DO DIA</h5>
         <h5>
           <img src="src/images/CrownSimple.png" alt="" />
           ASSINATURAS
