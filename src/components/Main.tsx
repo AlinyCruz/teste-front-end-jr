@@ -46,12 +46,12 @@ const card2 = [
 function Main() {
   return (
     <main>
-      <section>
+      <section id="img-50">
         {Section(card1.srcCard, card1.alt, card1.descricao1, card1.descricao2)}
         <BtnProduto />
       </section>
 
-      <section>
+      <section id="compras">
         {
           arrayImages.map((item) => {
             return (
@@ -64,9 +64,11 @@ function Main() {
         }
       </section>
 
-      <Carousel />
+      <section id="section-carrossel">
+        <Carousel />
+      </section>
 
-      <section>
+      <section id="confira">
         {
           card2.map((item) => {
             return (
@@ -84,11 +86,12 @@ function Main() {
         }
       </section>
 
-      <section>
-        <div>
-          <h3>Produtos relacionados</h3>
-          <a href="">Ver todos</a>
-        </div>
+      <div id="text-produtos-rel">
+        <h3>Produtos relacionados</h3>
+        <a href="">Ver todos</a>
+      </div>
+
+      <section id="produtos-rel">
         {
           card2.map((item) => {
             return (

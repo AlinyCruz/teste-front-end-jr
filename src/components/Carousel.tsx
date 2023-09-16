@@ -7,10 +7,10 @@ console.log(API);
 
 function Carousel() {
   return (
-    <div>
-      <section>
-        <h3>Produtos relacionados</h3>
-        <h5>CELULAR</h5>
+    <div id="div-carousel">
+      <h3>Produtos relacionados</h3>
+      <section id="produtos-relacionados">
+        <h5 id="cel">CELULAR</h5>
         <h5>ACESSÓRIOS</h5>
         <h5>TABLETS</h5>
         <h5>NOTEBOOKS</h5>

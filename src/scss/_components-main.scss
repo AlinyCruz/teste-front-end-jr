@@ -1,236 +1,255 @@
-// @import '_colors.scss';
+@import '_colors.scss';
 
-// @mixin image() {
-//   width: 1443px;
-//   height: 395px;
-//   flex-shrink: 0;
-//   opacity: 0.8;
-//   background: $bg-image;
-// }
+@mixin image() {
+  width: 1443px;
+  height: 395px;
+  flex-shrink: 0;
+  opacity: 0.8;
+  background: $bg-image;
+  display: flex;
+  margin: auto;
+}
 
-// @mixin title() {
-//   width: 822px;
-//   height: 128px;
-//   flex-shrink: 0;
-//   color: $white;
-//   font-family: Poppins;
-//   font-size: 48px;
-//   font-style: normal;
-//   font-weight: 600;
-//   line-height: normal;
-// }
+@mixin title() {
+  width: 822px;
+  height: 128px;
+  flex-shrink: 0;
+  color: $white;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: absolute;
+  margin: -16% 0% 0% 15%
+}
 
-// @mixin subtitle() {
-//   color: $white;
-//   font-family: Poppins;
-//   font-size: 48px;
-//   font-style: normal;
-//   font-weight: 600;
-//   line-height: normal;
-// }
+@mixin subtitle() {
+  color: $white;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: absolute;
+  margin: -10% 0% 0% 15%
+}
 
-// @mixin button1() {
-//   width: 227px;
-//   height: 60px;
-//   flex-shrink: 0;
-//   border-radius: 5px;
-//   background: $pink;
+@mixin button1() {
+  width: 227px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: $pink;
+  position: absolute;
+  margin: -5% 0% 0% 15%
+}
 
-//   @mixin title-button1() {
-//     color: $white;
-//     font-family: Poppins;
-//     font-size: 18px;
-//     font-style: normal;
-//     font-weight: 600;
-//     line-height: normal;
-//   }
-// }
+@mixin title-button1() {
+  color: $white;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 
-// @mixin div1-main() {
-//   width: 1277px;
-//   height: 174px;
-//   flex-shrink: 0;
-// }
+@mixin div1-main() {
+  width: 1277px;
+  height: 174px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 2% 0% 0% 15%
+}
 
-// @mixin rectangle-main() {
-//   width: 1277px;
-//   height: 174px;
-//   flex-shrink: 0;
-//   border-radius: 10px;
-//   background: $white;
-//   box-shadow: 0px 2px 9px 0px $item-main;
+@mixin rectangle-main() {
+  width: 128px;
+  height: 128px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: $white;
+  box-shadow: 0px 2px 9px 0px $item-main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-//   @mixin item() {
-//     width: 61px;
-//     height: 61px;
-//     flex-shrink: 0;
-//     background: $bg-item;
-//   }
-// }
+@mixin item() {
+  width: 61px;
+  height: 61px;
+  flex-shrink: 0;
+  background: $bg-item;
+}
 
-// @mixin text($color) {
-//   color: $color;
-//   font-family: Poppins;
-//   font-size: 16px;
-//   font-style: normal;
-//   font-weight: 500;
-//   line-height: normal;
-// }
+@mixin text($color) {
+  color: $color;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
-// @mixin line() {
-//   width: 360px;
-//   height: 1px;
-//   background: $bg-line;
-// }
+@mixin line() {
+  width: 360px;
+  height: 1px;
+  background: $bg-line;
+}
 
-// @mixin products-rel() {
-//   color: $pink;
-//   font-family: Poppins;
-//   font-size: 30px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: normal;
-// }
+@mixin products-rel() {
+  color: $pink;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 
-// @mixin text-products() {
-//   display: flex;
-//   height: 40px;
-//   padding: 12px 58px;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 10px;
-//   flex: 1 0 0;
-//   border: 1px solid $border;
-//   background: $white;
+@mixin box-products() {
+  display: flex;
+  height: 40px;
+  padding: 12px 58px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border: 1px solid $border;
+  background: $white;
 
-//   @mixin text() {
-//     color: $pink;
-//     font-family: Poppins;
-//     font-size: 16px;
-//     font-style: normal;
-//     font-weight: 700;
-//     line-height: 16px;
-//     text-transform: uppercase;
-//   }
-// }
+}
 
-// @mixin carousel() {
-//   display: inline-flex;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 62px;
+@mixin text1() {
+  color: $pink;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
 
-//   @mixin border() {
-//     width: 270px;
-//     height: 500px;
-//     flex-shrink: 0;
-//     border-radius: 10px;
-//     background: $white;
-//     box-shadow: 0px 3px 19px 0px $item-main;
-//   }
+@mixin carousel() {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 62px;
+  text-align: center;
+  width: 1277px;
+  height: 400px;
+  margin: 2% 0% 0% 15%
+}
 
-//   @mixin images-carousel() {
-//     width: 247px;
-//     height: 228px;
-//     flex-shrink: 0;
-//     background: $bg-item;
-//   }
+@mixin border() {
+  width: 270px;
+  height: 500px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: $white;
+  box-shadow: 0px 3px 19px 0px $item-main;
+}
 
-//   @mixin text() {
-//     color: $black;
-//     font-family: Poppins;
-//     font-size: 15px;
-//     font-style: normal;
-//     font-weight: 300;
-//     line-height: normal;
-//   }
+@mixin images-carousel() {
+  width: 247px;
+  height: 228px;
+  flex-shrink: 0;
+  background: $bg-item;
+}
 
-//   @mixin price() {
-//     color: var(--Preto, #3F3F40);
-//     font-family: Poppins;
-//     font-size: 20px;
-//     font-style: normal;
-//     font-weight: 700;
-//     line-height: normal;
-//   }
+@mixin text2() {
+  color: $black;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
 
-//   @mixin button2() {
-//     width: 245px;
-//     height: 44px;
-//     flex-shrink: 0;
-//     border-radius: 4px;
-//     background: $pink;
+@mixin price() {
+  color: $black;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 
-//     @mixin title-button2() {
-//       width: 113.806px;
-//       height: 18.48px;
-//       flex-shrink: 0;
-//       color: $white;
-//       text-align: center;
-//       font-family: Poppins;
-//       font-size: 14px;
-//       font-style: normal;
-//       font-weight: 700;
-//       line-height: normal;
-//       text-transform: uppercase;
-//     }
-//   }
-// }
+@mixin button2() {
+  width: 245px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: $pink;
+}
 
-// @mixin div-images($width) {
-//   width: $width;
-//   height: 503px;
-//   flex-shrink: 0;
-//   background: $bg-item;
+@mixin title-button2() {
+  flex-shrink: 0;
+  color: $white;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
 
-//   @mixin image($width, $height) {
-//     width: $width;
-//     height: $height;
-//     flex-shrink: 0;
-//     border-radius: 0px 0px 20px 20px;
-//     opacity: 0.8;
-//     background: $bg-image;
-//   }
+@mixin div-images($width) {
+  width: $width;
+  height: 503px;
+  flex-shrink: 0;
+  background: $bg-item;
+}
 
-//   @mixin text-images($font-size, $font-weight) {
-//     color: $width;
-//     font-family: Poppins;
-//     font-size: $font-size;
-//     font-style: normal;
-//     font-weight: $font-weight;
-//     line-height: normal;
-//   }
-// }
+@mixin image2($width, $height) {
+  width: $width;
+  height: $height;
+  flex-shrink: 0;
+  border-radius: 0px 0px 20px 20px;
+  opacity: 0.8;
+  background: $bg-image;
+}
 
-// @mixin button-images($width, ) {
-//   width: $width;
-//   height: 48px;
-//   flex-shrink: 0;
-//   border-radius: 10px;
-//   background: $pink;
+@mixin text-images($font-size, $font-weight) {
+  color: $white;
+  font-family: Poppins;
+  font-size: $font-size;
+  font-style: normal;
+  font-weight: $font-weight;
+  line-height: normal;
+}
 
-//   @mixin text-button-images() {
-//     color: $width;
-//     text-align: center;
-//     font-family: Poppins;
-//     font-size: 16px;
-//     font-style: normal;
-//     font-weight: 900;
-//     line-height: normal;
-//     letter-spacing: 1.28px;
-//     text-transform: uppercase;
-//   }
-// }
+@mixin button-images($width, ) {
+  width: $width;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: $pink;
 
-// @mixin text-ver-todos() {
-//   color: $black;
-//   text-align: center;
-//   font-family: Poppins;
-//   font-size: 15px;
-//   font-style: normal;
-//   font-weight: 700;
-//   line-height: normal;
-// }
+}
+
+@mixin text-button-images() {
+  color: $width;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+}
+
+@mixin text-ver-todos() {
+  color: $black;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 
 // @mixin images2() {
 //   width: 589.726px;
@@ -239,26 +258,26 @@
 //   border-radius: 0px 0px 10px 10px;
 //   opacity: 0.8;
 //   background: $bg-image;
+// }
 
-//   @mixin text-images2() {
-//     width: 201.37px;
-//     color: $white;
-//     font-family: Poppins;
-//     font-size: 40px;
-//     font-style: normal;
-//     font-weight: 700;
-//     line-height: normal;
-//   }
+// @mixin text-images2() {
+//   width: 201.37px;
+//   color: $white;
+//   font-family: Poppins;
+//   font-size: 40px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: normal;
+// }
 
-//   @mixin subtitle-images2() {
-//     width: 185.959px;
-//     color: $white;
-//     font-family: Poppins;
-//     font-size: 16px;
-//     font-style: normal;
-//     font-weight: 400;
-//     line-height: normal;
-//   }
+// @mixin subtitle-images2() {
+//   width: 185.959px;
+//   color: $white;
+//   font-family: Poppins;
+//   font-size: 16px;
+//   font-style: normal;
+//   font-weight: 400;
+//   line-height: normal;
 // }
 
 // @mixin text-nav-marcas() {
@@ -275,9 +294,10 @@
 //   height: 234px;
 //   flex-shrink: 0;
 
-//   @mixin text-vtex() {
-//     width: 172px;
-//     height: 62.664px;
-//     flex-shrink: 0;
-//   }
+// }
+
+// @mixin text-vtex() {
+//   width: 172px;
+//   height: 62.664px;
+//   flex-shrink: 0;
 // }

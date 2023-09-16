@@ -1,6 +1,6 @@
 function BtnComponent(image: string) {
   return (
-    <button key={ image }>
+    <button key={ image } id="btn-tag-compras">
       {' '}
       <img src={ image } alt={ image } />
       {' '}
